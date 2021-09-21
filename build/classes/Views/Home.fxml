@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HomeController">
+   <children>
+      <ImageView fx:id="image" fitHeight="356.0" fitWidth="402.0" layoutX="71.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Sources/istockphoto-1325168726-612x612.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="413.0" layoutY="47.0" text="Student Registration Form">
+         <font>
+            <Font name="Candara Light Italic" size="48.0" />
+         </font>
+         <effect>
+            <Lighting bumpInput="$null">
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <Button layoutX="562.0" layoutY="233.0" mnemonicParsing="false" onAction="#newStudent" prefHeight="64.0" prefWidth="280.0" text="NEW STUDENT">
+         <font>
+            <Font name="Candara Light" size="24.0" />
+         </font>
+      </Button>
+      <Hyperlink layoutX="628.0" layoutY="383.0" onAction="#viewStudent" text="View Student List">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Hyperlink>
+      <Label layoutX="440.0" layoutY="563.0" text="-: By Raj Kuamr Sony :-" />
+   </children>
+</AnchorPane>

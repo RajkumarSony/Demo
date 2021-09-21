@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="351.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.StudentEntryController">
+   <children>
+      <TextField fx:id="name" layoutX="229.0" layoutY="40.0" prefHeight="30.0" prefWidth="250.0" promptText="Student Name" />
+      <ComboBox fx:id="branch" layoutX="229.0" layoutY="90.0" prefHeight="30.0" prefWidth="250.0" promptText="---Select Branch---" AnchorPane.topAnchor="90.0" />
+      <TextField fx:id="mobile" layoutX="229.0" layoutY="140.0" prefHeight="30.0" prefWidth="250.0" promptText="Mobile Number" AnchorPane.topAnchor="140.0" />
+      <ComboBox fx:id="gender" layoutX="229.0" layoutY="190.0" prefHeight="30.0" prefWidth="250.0" promptText="---Select Gender---" AnchorPane.topAnchor="190.0" />
+      <Button layoutX="110.0" layoutY="297.0" mnemonicParsing="false" onAction="#addStudentBtn" prefHeight="30.0" prefWidth="118.0" text="ADD" AnchorPane.leftAnchor="110.0" />
+      <Button layoutX="310.0" layoutY="297.0" mnemonicParsing="false" onAction="#resetBtn" prefHeight="30.0" prefWidth="118.0" text="RESET" />
+      <Label layoutX="76.0" layoutY="48.0" text="Student Name :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="95.0" text="Branch Name :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="145.0" text="Mobile Number :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="121.0" layoutY="195.0" text="Gender :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="11.0" layoutY="275.0" prefHeight="2.0" prefWidth="516.0" />
+   </children>
+</AnchorPane>
